@@ -1,11 +1,13 @@
 Package: blueycolors
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Provides Bluey Inspired Color Palettes
+Version: 0.0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Eric", "Ekholm", , "eric.ekholm@gmail.com", role = c("aut", "cre"))
+Description: Provides Bluey-inspired color palettes and ggplot2 scales.
 License: MIT + file LICENSE
+URL: https://github.com/ekholme/blueycolors,
+    https://ekholme.github.io/blueycolors/
+BugReports: https://github.com/ekholme/blueycolors/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
