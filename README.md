@@ -4,6 +4,10 @@
 # blueycolors
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ekholme/blueycolors/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ekholme/blueycolors/actions/workflows/R-CMD-check.yaml)
+![GitHub last
+commit](https://img.shields.io/github/last-commit/ekholme/blueycolors)
 <!-- badges: end -->
 
 blueycolors provides color palettes and ggplot2 `color` and `fill`
