@@ -36,13 +36,12 @@ tmp <- data.frame(x = rnorm(100), y = rnorm(100), z = rep(c("a", "b", "c", "d"),
 
 # using a discrete scale
 ggplot(tmp, aes(x, y, color = z)) +
-geom_point() +
-scale_color_bluey()
+  geom_point() +
+  scale_color_bluey()
 
 # changing the palette used when creating a discrete scale
 ggplot(tmp, aes(x, y, color = z)) +
-geom_point() +
-scale_color_bluey(option = "socks")
-
+  geom_point() +
+  scale_color_bluey(option = "socks")
 
 }
