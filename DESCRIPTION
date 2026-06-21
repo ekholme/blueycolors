@@ -2,7 +2,7 @@ Package: blueycolors
 Title: Provides Bluey Inspired Color Palettes
 Version: 0.1.0
 Authors@R: 
-    person("Eric", "Ekholm", , "eric.ekholm@gmail.com", role = c("aut", "cre"))
+    person("Eric", "Ekholm", , "eric.ekholm@gmail.com", role = c("aut", "cre", "cph"))
 Description: Provides Bluey-inspired color palettes and ggplot2 scales.
 License: MIT + file LICENSE
 URL: https://github.com/ekholme/blueycolors,
