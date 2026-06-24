@@ -11,6 +11,13 @@ bluey_palette(option = "bluey", n = NULL)
 
 \item{n}{The number of colors to return. Currently, all scales are limited to 5 colors}
 }
+\value{
+a character vector of hex codes for the requested palette
+}
 \description{
-Extract a color palette of the desired length
+Extract a color palette of the desired length (maximum of length 5)
+}
+\examples{
+bluey_palette("heeler")
+bluey_palette("socks", n = 5)
 }

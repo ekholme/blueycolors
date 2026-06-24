@@ -23,6 +23,9 @@ scale_fill_bluey_c(option = "bluey", direction = 1, ...)
 
 \item{...}{Additional arguments passed to ggplot2 scale functions}
 }
+\value{
+A \code{ScaleDiscrete} object that can be added to another \code{ggplot} object
+}
 \description{
 ggplot2 fill and color scales derived from Bluey characters
 \itemize{

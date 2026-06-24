@@ -11,7 +11,7 @@ bluey_colors <- list(
 
 #' Bluey Color Palette Constructor
 #'
-#' @description Extract a color palette of the desired length
+#' @description Extract a color palette of the desired length (maximum of length 5)
 #'
 #' @param option The name of the color palette to use. Current options are 'bluey', 'chilli', 'heeler', and 'socks'
 #' @param n The number of colors to return. Currently, all scales are limited to 5 colors
@@ -19,6 +19,10 @@ bluey_colors <- list(
 #' @name bluey_palette
 #'
 #' @export
+#' @return a character vector of hex codes for the requested palette
+#' @examples
+#' bluey_palette("heeler")
+#' bluey_palette("socks", n = 5)
 bluey_palette <- function(option = "bluey", n = NULL) {
   stopifnot(is.null(option) || option %in% names(bluey_colors))
 
@@ -72,7 +76,8 @@ palette_gen_c <- function(direction = 1, option = "bluey", ...) {
 #'
 #' @name bluey_ggplot2_scales
 #'
-#' @export
+#' @export 
+#' @return A \code{ScaleDiscrete} object that can be added to another \code{ggplot} object
 #'
 #' @examples
 #' library(ggplot2)
