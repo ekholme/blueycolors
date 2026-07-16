@@ -11,7 +11,8 @@ BugReports: https://github.com/ekholme/blueycolors/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Imports: 
-    ggplot2
+    ggplot2,
+    grDevices
 Suggests: 
     scales,
     testthat (>= 3.0.0)

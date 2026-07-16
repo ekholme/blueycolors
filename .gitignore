@@ -1,1 +1,29 @@
-docs
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+.Rproj.user/
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build and check
+/*.tar.gz
+/*.Rcheck/
+
+# Local build artifacts for README & Vignettes
+README.html
+/vignettes/*.html
+/vignettes/*.R
+/inst/doc
+
+# C/C++ compilation artifacts (if you are using Rcpp)
+src/*.o
+src/*.so
+src/*.dll

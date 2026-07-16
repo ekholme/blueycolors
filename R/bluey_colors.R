@@ -59,7 +59,7 @@ palette_gen_c <- function(direction = 1, option = "bluey", ...) {
 
   pal <- if (direction >= 0) pal else rev(pal)
 
-  colorRampPalette(pal, ...)
+  grDevices::colorRampPalette(pal, ...)
 }
 
 #' Bluey ggplot 2 color scales

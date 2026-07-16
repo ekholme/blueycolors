@@ -15,7 +15,14 @@ scales inspired by [Bluey](https://www.bluey.tv/)
 
 ## Installation
 
-You can install blueycolors from Github via:
+You can install blueycolors from CRAN via:
+
+``` r
+install.packages("blueycolors")
+```
+
+Alternatively, you can install the package from from Github using
+devtools:
 
 ``` r
 devtools::install_github("ekholme/blueycolors")
@@ -26,7 +33,7 @@ devtools::install_github("ekholme/blueycolors")
 There are probably 2 main uses for this package:
 
 1.  Extracting palettes and their associated hex codes
-2.  Using these palettes as color or fill aesthetics in ggplot
+2.  Using these palettes as color or fill aesthetics in ggplot2
 
 To extract palettes & hex codes, use the `bluey_palette()` function:
 
@@ -55,7 +62,7 @@ ggplot(tmp, aes(x = x, y = y, color = z)) +
   scale_color_bluey()
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" alt="" width="100%" />
 
 ``` r
 tmp2 <- data.frame(
@@ -68,7 +75,7 @@ ggplot(tmp2, aes(x = x, y = y, fill = y)) +
   scale_fill_bluey(option = "socks")
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" alt="" width="100%" />
 
 There are currently [4 different palettes available](#palettes), but the
 “heeler” option probably provides the best contrast.
@@ -83,7 +90,7 @@ library(scales)
 show_col(bluey_palette("bluey"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" alt="" width="100%" />
 
 Chilli
 
@@ -91,7 +98,7 @@ Chilli
 show_col(bluey_palette("chilli"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" alt="" width="100%" />
 
 Heeler
 
@@ -99,7 +106,7 @@ Heeler
 show_col(bluey_palette("heeler"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" alt="" width="100%" />
 
 Socks
 
@@ -107,4 +114,4 @@ Socks
 show_col(bluey_palette("socks"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" alt="" width="100%" />
