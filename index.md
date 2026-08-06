@@ -1,0 +1,124 @@
+# blueycolors
+
+blueycolors provides color palettes and ggplot2 `color` and `fill`
+scales inspired by [Bluey](https://www.bluey.tv/)
+
+## Installation
+
+You can install blueycolors from CRAN via:
+
+``` r
+
+install.packages("blueycolors")
+```
+
+Alternatively, you can install the package from from Github using
+devtools:
+
+``` r
+
+devtools::install_github("ekholme/blueycolors")
+```
+
+## Usage
+
+There are probably 2 main uses for this package:
+
+1.  Extracting palettes and their associated hex codes
+2.  Using these palettes as color or fill aesthetics in ggplot2
+
+To extract palettes & hex codes, use the
+[`bluey_palette()`](https://ekholme.github.io/blueycolors/reference/bluey_palette.md)
+function:
+
+``` r
+
+library(blueycolors)
+
+bluey_palette("bluey")
+#> [1] "#d2ebff" "#88cafc" "#404066" "#2b2c41" "#edcc6f"
+```
+
+To use the palettes in ggplot, use
+[`scale_color_bluey()`](https://ekholme.github.io/blueycolors/reference/bluey_ggplot2_scales.md)
+and
+[`scale_fill_bluey()`](https://ekholme.github.io/blueycolors/reference/bluey_ggplot2_scales.md)
+for discrete scales or
+[`scale_color_bluey_c()`](https://ekholme.github.io/blueycolors/reference/bluey_ggplot2_scales.md)
+and
+[`scale_fill_bluey_c()`](https://ekholme.github.io/blueycolors/reference/bluey_ggplot2_scales.md)
+for continuous scales.
+
+``` r
+
+library(ggplot2)
+
+tmp <- data.frame(
+  x = rnorm(100),
+  y = rnorm(100),
+  z = rep(c("a", "b", "c", "d"), 25)
+)
+
+ggplot(tmp, aes(x = x, y = y, color = z)) +
+  geom_point() +
+  scale_color_bluey()
+```
+
+![](reference/figures/README-unnamed-chunk-3-1.png)
+
+``` r
+
+tmp2 <- data.frame(
+  x = 1:5,
+  y = c("a", "b", "c", "d", "e")
+) 
+
+ggplot(tmp2, aes(x = x, y = y, fill = y)) +
+  geom_col() +
+  scale_fill_bluey(option = "socks")
+```
+
+![](reference/figures/README-unnamed-chunk-4-1.png)
+
+There are currently [4 different palettes available](#palettes), but the
+“heeler” option probably provides the best contrast.
+
+## Palettes
+
+Bluey (default)
+
+``` r
+
+library(scales)
+
+show_col(bluey_palette("bluey"))
+```
+
+![](reference/figures/README-unnamed-chunk-5-1.png)
+
+Chilli
+
+``` r
+
+show_col(bluey_palette("chilli"))
+```
+
+![](reference/figures/README-unnamed-chunk-6-1.png)
+
+Heeler
+
+``` r
+
+show_col(bluey_palette("heeler"))
+```
+
+![](reference/figures/README-unnamed-chunk-7-1.png)
+
+Socks
+
+``` r
+
+show_col(bluey_palette("socks"))
+```
+
+![](reference/figures/README-unnamed-chunk-8-1.png)
