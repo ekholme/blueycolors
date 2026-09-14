@@ -1,6 +1,11 @@
 #' Available Bluey Color Palettes
 #'
 #' Use \code{\link{bluey_palette}} to extract palettes of the desired length
+#'
+#' @return A named \code{list} of character vectors, where each vector contains 
+#'   hex color codes corresponding to a Bluey character palette 
+#'   (\code{bluey}, \code{chilli}, \code{heeler}, and \code{socks}).
+#' @export
 #' @export
 bluey_colors <- list(
   bluey = c("#d2ebff", "#88cafc", "#404066", "#2b2c41", "#edcc6f"),

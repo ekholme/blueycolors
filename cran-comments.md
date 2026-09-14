@@ -1,9 +1,7 @@
 ## Resubmission
 This is a resubmission. In this version, I have:
 
-* Enclosed proper nouns in the DESCRIPTION with single quotes.
-
-* Removed top-level files causing a note in R CMD CHECK (i.e. README.html, CHANGELOG.md)
+* Added a @return value to the documentation for `bluey_colors`
 
 ## R CMD check results
 

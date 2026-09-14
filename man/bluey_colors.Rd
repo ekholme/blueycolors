@@ -6,6 +6,11 @@
 \usage{
 bluey_colors
 }
+\value{
+A named \code{list} of character vectors, where each vector contains
+hex color codes corresponding to a Bluey character palette
+(\code{bluey}, \code{chilli}, \code{heeler}, and \code{socks}).
+}
 \description{
 Use \code{\link{bluey_palette}} to extract palettes of the desired length
 }
