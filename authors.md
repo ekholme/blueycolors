@@ -7,7 +7,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/ekholme/blueycolors/blob/master/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/ekholme/blueycolors/blob/v0.2.2/DESCRIPTION)
 
 Ekholm E (2026). *blueycolors: Provides 'Bluey' Inspired Color
 Palettes*. R package version 0.2.2,
